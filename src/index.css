@@ -1,0 +1,227 @@
+body{
+  background-color: #dee9ff;
+}
+
+.registration-form{
+padding: 50px 0;
+}
+
+.registration-form  .div{
+
+  background-color: #fff;
+  max-width: 600px;
+  margin: auto;
+  padding: 50px 70px;
+  border-radius: 30px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+.registration-form form{
+  background-color: #fff;
+  max-width: 600px;
+  margin: auto;
+  padding: 50px 70px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .form-icon{
+text-align: center;
+  background-color: #5891ff;
+  border-radius: 50%;
+  font-size: 40px;
+  color: white;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 50px;
+  line-height: 100px;
+}
+
+.registration-form .item{
+border-radius: 20px;
+  /* margin-bottom: 5; */
+  padding: 10px 20px;
+}
+
+.registration-form .create-account{
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #5791ff;
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
+
+.registration-form .social-media{
+  max-width: 600px;
+  background-color: #fff;
+  margin: auto;
+  padding: 35px 0;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: #9fadca;
+  border-top: 1px solid #dee9ff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.registration-form .social-icons{
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.registration-form .social-icons a{
+  font-size: 23px;
+  margin: 0 3px;
+  color: #5691ff;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 45px;
+  display: inline-block;
+  height: 45px;
+  text-align: center;
+  background-color: #fff;
+  line-height: 45px;
+}
+
+.registration-form .social-icons a:hover{
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+@media (max-width: 576px) {
+  .registration-form form{
+      padding: 50px 20px;
+  }
+
+  .registration-form .form-icon{
+      width: 70px;
+      height: 70px;
+      font-size: 30px;
+      line-height: 70px;
+  }
+}
+.animate-spin{
+  animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ 
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  width: 160px;
+  height: 100px;
+  margin-left: -80px;
+  margin-top: -50px;
+  border-radius: 5px;
+  background: #1e3f57;
+  animation: dot1_ 3s cubic-bezier(0.55,0.3,0.24,0.99) infinite;
+}
+
+.loader:nth-child(2) {
+  z-index: 11;
+  width: 150px;
+  height: 90px;
+  margin-top: -45px;
+  margin-left: -75px;
+  border-radius: 3px;
+  background: #3c517d;
+  animation-name: dot2_;
+}
+
+.loader:nth-child(3) {
+  z-index: 12;
+  width: 40px;
+  height: 20px;
+  margin-top: 50px;
+  margin-left: -20px;
+  border-radius: 0 0 5px 5px;
+  background: #6bb2cd;
+  animation-name: dot3_;
+}
+
+@keyframes dot1_ {
+  3%,97% {
+    width: 160px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -80px;
+  }
+
+  30%,36% {
+    width: 80px;
+    height: 120px;
+    margin-top: -60px;
+    margin-left: -40px;
+  }
+
+  63%,69% {
+    width: 40px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: -20px;
+  }
+}
+
+@keyframes dot2_ {
+  3%,97% {
+    height: 90px;
+    width: 150px;
+    margin-left: -75px;
+    margin-top: -45px;
+  }
+
+  30%,36% {
+    width: 70px;
+    height: 96px;
+    margin-left: -35px;
+    margin-top: -48px;
+  }
+
+  63%,69% {
+    width: 32px;
+    height: 60px;
+    margin-left: -16px;
+    margin-top: -30px;
+  }
+}
+
+@keyframes dot3_ {
+  3%,97% {
+    height: 20px;
+    width: 40px;
+    margin-left: -20px;
+    margin-top: 50px;
+  }
+
+  30%,36% {
+    width: 8px;
+    height: 8px;
+    margin-left: -5px;
+    margin-top: 49px;
+    border-radius: 8px;
+  }
+
+  63%,69% {
+    width: 16px;
+    height: 4px;
+    margin-left: -8px;
+    margin-top: -37px;
+    border-radius: 10px;
+  }
+}
